@@ -1,6 +1,6 @@
 # :zap: Next Tailwind Optimised
 
-* A Next/Tailwind SSR Progressive Web App displaying an info. card, deployed to Vercel
+* A Next/Tailwind SSR barebones app
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/next-tailwind-optimised?style=plastic)
@@ -45,8 +45,6 @@
 * [Vercel](https://vercel.com)
 * [pngTree](https://pngtree.com/) downloadable images, png etc.
 * [pwa-asset-generator v4](https://www.npmjs.com/package/pwa-asset-generator) Automated PWA asset generation and image declaration. Creates icons and JSON array for PWA manifest.json file
-* [Unsplash API random image](). No API key required, image size can be specified in url
-* [Quote of the Day REST API]() Rate limit of 10 requests per hour
 
 ## :floppy_disk: Setup
 
@@ -64,15 +62,12 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: In work tba...Working basic PWA, Deployed to Vercel
-* Status pages:
+* Status: In work
 * To-Do: Complete
 
 ## :clap: Inspiration
 
 * [Install Tailwind CSS with Next.js](https://tailwindcss.com/docs/guides/nextjs)
-* [Medium: How to use Next.js <Image> component](https://medium.com/eincode/how-to-use-next-js-image-component-dfbf3725b12)
-* [Stackoverflow: Next.JS "Link" vs "router.push()" vs "a" tag](https://stackoverflow.com/questions/65086108/next-js-link-vs-router-push-vs-a-tag)
 * [Convert your website into a PWA in 8 simple steps](https://milindsoorya.site/blog/convert-your-website-into-a-pwa-in-8-simple-steps-next-js-pwa-series-part-2#step-6-edit-your-_documentjs-file)
 * [How to Deploy Next.js Sites to Netlify](https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/)
 
