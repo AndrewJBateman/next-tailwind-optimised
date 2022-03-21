@@ -1,6 +1,7 @@
 # :zap: Next Tailwind Optimised
 
-* A Next/Tailwind SSR barebones app
+* A Next/Tailwind SSR app that displays data & images from an API with perfect Lighthouse scores
+* This is a template for a portfolio website (Work in progress)
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/next-tailwind-optimised?style=plastic)
@@ -26,7 +27,6 @@
 
 * Next.js used for frontend is for server-rendered react apps. It has automatic code splitting, simple page-based routing, built-in CSS support and hot reloading.
 * Tailwind CSS added to Next.js
-* [Unsplash API](https://source.unsplash.com/) random photo is displayed
 * Latest Next/Image optimisation used so image downloaded as Webp format and automatically sized. This is a major advantage over non-optimised Images. Working for datalist page but not used for News API page as all sources have to be added to `next.config.js`
 * Converted to Progressive Web App (PWA).
 * [Custom `Document`](https://nextjs.org/docs/advanced-features/custom-document) file `./pages/_document.js` created to override and extend default `Document`. It injects meta tags into every page
@@ -40,9 +40,9 @@
 * [React v17](https://reactjs.org/) Javascript library.
 * [React icons v4](https://www.npmjs.com/package/react-icons)
 * [Next v11](https://nextjs.org/) minimalist framework for rendering react apps on the server.
-* [Tailwind v2](https://tailwindcss.com/) utility-first CSS framework
+* [Tailwind v3](https://tailwindcss.com/) utility-first CSS framework
 * [PostCSS v8](https://postcss.org/) tool for transforming CSS with JavaScript
-* [Vercel](https://vercel.com)
+* [Vercel](https://vercel.com) site hosting
 * [pngTree](https://pngtree.com/) downloadable images, png etc.
 * [pwa-asset-generator v4](https://www.npmjs.com/package/pwa-asset-generator) Automated PWA asset generation and image declaration. Creates icons and JSON array for PWA manifest.json file
 
