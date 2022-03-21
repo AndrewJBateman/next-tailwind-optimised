@@ -33,14 +33,15 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./imgs/home.png)
+![Example screenshot](./imgs/list.png)
+![Example screenshot](./imgs/card.png)
 
 ## :signal_strength: Technologies
 
 * [React v17](https://reactjs.org/) Javascript library.
 * [React icons v4](https://www.npmjs.com/package/react-icons)
-* [Next v11](https://nextjs.org/) minimalist framework for rendering react apps on the server.
-* [Tailwind v3](https://tailwindcss.com/) utility-first CSS framework
+* [Next v12](https://nextjs.org/) minimalist framework for rendering react apps on the server.
+* [Tailwind CSS v3](https://tailwindcss.com/) utility-first CSS framework
 * [PostCSS v8](https://postcss.org/) tool for transforming CSS with JavaScript
 * [Vercel](https://vercel.com) site hosting
 * [pngTree](https://pngtree.com/) downloadable images, png etc.
