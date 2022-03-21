@@ -1,48 +1,48 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import NextImage from "next/image";
-import styles from "../styles/Home.module.css";
 
-const Home = () => {
-  return (
-    <>
-      <Head>
-        <title>Home page</title>
-      </Head>
-      <section className="container p-10 mx-auto duration-500 transform md:p-20">
-        <article className="relative max-w-sm mx-auto shadow-lg">
-          <NextImage
-            className=""
-            width="400"
-            height="300"
-            src="https://source.unsplash.com/random/400x300"
-            alt="random photo"
-          />
-          <span className="absolute p-1 pl-4 pr-4 font-semibold text-white bg-gray-600 rounded-md right-4 top-4">
-            Unsplash Random Image
-          </span>
-          <div className="pb-10 my-auto p-7 ">
-            <h1 className="text-2xl font-semibold text-gray-800">
-              Quote of the Day
-            </h1>
-            <p className="mt-2 text-base text-gray-400"></p>
-          </div>
-        </article>
-      </section>
-    </>
+export async function getStaticProps() {
+  const resp = await fetch(
+    "https://jsonplaceholder.typicode.com/posts?userId=1"
   );
-};
+  return {
+    props: {
+      notes: await resp.json(),
+    },
+  };
+}
 
-// Home.getInitialProps = async function() {
-//   const res = await fetch('https://quotes.rest/qod');
-//   const data = await res.json();
-//   quoteData = data.contents.quotes;
-//   console.log('data:', quoteData);
-
-//   return {
-//     props: {
-//       quoteData
-//     }
-//   }
-// }
-
-export default Home;
+export default function Home({ notes }) {
+  return (
+    <div>
+      <Head>
+        <title>Notes List Page</title>
+      </Head>
+      <h1 className="pt-8 mx-auto text-2xl font-semibold text-center text-gray-800">Notes List</h1>
+      {notes.map((note, idx) => (
+        <div
+          className="max-w-md px-8 py-4 mx-auto my-4 bg-white rounded-lg shadow-lg"
+          key={note.id}
+        >
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-800">
+              <span className="mr-2 text-xl font-medium text-indigo-700">
+                {note.id}.
+              </span>
+              {note.title}
+            </h2>
+            {/* <p className="mt-2 text-gray-600">{note.body}</p> */}
+          </div>
+          <div className="flex justify-end">
+            <a
+              href={`/note/${note.id}`}
+              className="text-xl font-medium text-indigo-700"
+            >
+              more...
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
